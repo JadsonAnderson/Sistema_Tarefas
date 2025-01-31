@@ -1,0 +1,92 @@
+/* Corpo do site */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 2em;
+    background-color: rgb(214, 208, 208);
+}
+
+/* Título do site */
+#tituloLista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Espaçamento extra no corpo para evitar sobreposição com o rodapé */
+main {
+    padding-bottom: 60px; /* Espaço suficiente para acomodar o rodapé */
+}
+
+/* Formulário */
+#formularioTarefa {
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #c6c1c1;
+    border: 1px solid #ece8e8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de tarefas */
+#listaTarefa {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Estilização das tarefas */
+#tarefa {
+    background-color: #e4dfdf;
+    border: 1px solid #555353;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilização de tarefas concluídas */
+.concluida {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+/* Estilização do botão de excluir tarefa */
+#btnExcluir {
+    background-color: rgb(141, 133, 165);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Evento do mouse do botão de excluir tarefa */
+#btnExcluir:hover {
+    background-color: #ff1a1a;
+}
+
+/* Botão de adicionar tarefa */
+#btnAdicionarTarefa:hover {
+    background-color: rgb(10, 230, 10);
+}
+
+/* Rodapé do site */
+#rodapeLista {
+    position: fixed; /* Mantém o rodapé fixo */
+    bottom: 0; /* Alinha o rodapé à parte inferior da janela */
+    left: 0; /* Alinha o rodapé à margem esquerda */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da janela */
+    background-color: #c6c1c1; /* Mantém o fundo consistente */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Ajusta o espaçamento interno */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra acima */
+}
